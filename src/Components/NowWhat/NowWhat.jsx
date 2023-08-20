@@ -4,8 +4,11 @@ import React from "react";
 
 // assets
 import YpLogoIcon from "../../Assets/Images/YP Logo Primary Dark Icon.png";
+import { PopupButton } from "react-calendly";
 
 const NowWhat = () => {
+
+
   return (
     <section class="body-font bg-gradient-to-tr from-w-light-green to-w-skyblue">
       <div class=" 2xl:w-[1000px] 2xl:m-auto container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
@@ -18,17 +21,21 @@ const NowWhat = () => {
           </p>
         </div>
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-end">
-          <div className="grid grid-cols-2 gap-5">
-            <a className="  inline-flex font-bold cursor-pointer hover:bg-yp-orange items-center text-xs px-5 py-3 bg-w-dark-gray rounded-md text-white justify-center uppercase h-14">
-            Schedule Appointment 
-            </a>{" "}
-            <a className="  inline-flex font-bold cursor-pointer hover:bg-yp-orange items-center text-xs px-5 py-3 bg-w-dark-gray rounded-md text-white justify-center uppercase h-14">
+          <div className="grid grid-cols-2 gap-5" id="nowwhatbuttonscon">
+            <PopupButton
+              url="https://calendly.com/yupgrab/30min"
+              rootElement={document.getElementById("root")}
+              text="Schedule Meeting"
+              className=" inline-flex font-bold cursor-pointer hover:bg-yp-orange items-center text-xs px-5 py-3 bg-w-dark-gray rounded-md text-white justify-center uppercase h-14"
+            />
+
+            <a href="https://wa.me/+971554383225" target="_blank" className="  inline-flex font-bold cursor-pointer hover:bg-yp-orange items-center text-xs px-5 py-3 bg-w-dark-gray rounded-md text-white justify-center uppercase h-14">
               Whatsapp
-            </a>{" "}
-            <a className="  inline-flex font-bold cursor-pointer hover:bg-yp-orange items-center text-xs px-5 py-3 bg-w-dark-gray rounded-md text-white justify-center uppercase h-14">
+            </a>
+            <a href="mailto:info@yupgrab.com" target="_blank" className="  inline-flex font-bold cursor-pointer hover:bg-yp-orange items-center text-xs px-5 py-3 bg-w-dark-gray rounded-md text-white justify-center uppercase h-14">
               Email
-            </a>{" "}
-            <a className="  inline-flex font-bold cursor-pointer hover:bg-yp-orange items-center text-xs px-5 py-3 bg-w-dark-gray rounded-md text-white justify-center uppercase h-14">
+            </a>
+            <a  className="  inline-flex font-bold cursor-pointer hover:bg-yp-orange items-center text-xs px-5 py-3 bg-w-dark-gray rounded-md text-white justify-center uppercase h-14">
               Live Chat
             </a>
           </div>

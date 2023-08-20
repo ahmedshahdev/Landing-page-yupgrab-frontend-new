@@ -10,3 +10,10 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
+
+.calendly-badge-widget {
+    position: fixed;
+    right: 100px !important;
+    bottom: 20px !important;
+    z-index: 9998;
+}
