@@ -3,15 +3,16 @@ import React from "react";
 // components
 
 // assets
-import YpLogo from '../../../Assets/Images/YP Logo Primary.png'
+import YpLogo from '../../Assets/Images/YP Logo Primary Light.png'
 
-const Navbar = () => {
+const Footer = () => {
   return (
-    <header className="text-gray-600 body-font">
+    <header className="text-gray-600 body-font bg-yp-gray">
       <div className=" 2xl:w-[1000px] 2xl:m-auto container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <img width="200px" src={YpLogo}/>
+          <img width="130px" src={YpLogo}/>
         </a>
+        <p className="ml-5 text-white font-bold text-xs">Copyright © 2023 Yubgrab</p>
         {/* <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
           <a className="mr-5 hover:text-gray-900">First Link</a>
           <a className="mr-5 hover:text-gray-900">Second Link</a>
@@ -37,4 +38,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Footer;

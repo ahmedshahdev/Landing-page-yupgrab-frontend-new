@@ -9,6 +9,9 @@ module.exports = {
         "yp-orange": "#F99E33",
 
         "w-red":"#D7596F",
+        "w-dark-gray": "#403C3C",
+        "w-light-green": "#33F95F",
+        "w-skyblue":"#59A9D7"
 
       }
     },
